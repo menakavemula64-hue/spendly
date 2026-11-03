@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forgot password | Spendly</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💸</text></svg>">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+<main class="box">
+  <div class="brand"><i>💸</i>Spendly</div>
+  <h1>Forgot your password?</h1>
+  <p class="sub">Enter your email and we will send you a link to reset it.</p>
+  <div id="msg" class="msg" hidden></div>
+  <div id="inbox" class="inbox" hidden><b>Demo inbox</b><small>Subject: Reset your Spendly password</small><span>Open the link to choose a new password. It is valid for 1 hour.</span><a id="reset-link" href="#">Open reset link</a></div>
+  <form id="auth-form" data-kind="forgot">
+    <label>Email<input id="email" type="email" autocomplete="email" required autofocus></label>
+    <button type="submit">Send reset link</button>
+  </form>
+  <p class="foot"><a href="login.html">Back to log in</a></p>
+  <div class="demo">Demo login for a portfolio project. Accounts are saved only in your browser and no real email is sent.</div>
+</main>
+<script src="auth.js"></script>
+</body>
+</html>
